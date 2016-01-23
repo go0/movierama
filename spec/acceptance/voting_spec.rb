@@ -76,6 +76,3 @@ RSpec.describe 'vote on movies', type: :feature do
   end
 
 end
-
-
-

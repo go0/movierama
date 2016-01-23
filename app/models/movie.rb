@@ -4,6 +4,7 @@ class Movie < BaseModel
   attribute :title
   attribute :date
   attribute :description
+  attribute :notifications
 
   reference :user, :User
 
@@ -12,5 +13,8 @@ class Movie < BaseModel
 
   set :likers, :User
   set :haters, :User
-end
 
+  def notifications_on?
+    notifications.to_s == 'true'
+  end
+end

@@ -31,6 +31,18 @@ Check that everything works by seeding the database with a few users and movies:
 
     $ ./bin/seed
 
+`mailcatcher` is needed to get mails working in development.
+
+Install it:
+
+    $ gem install mailcatcher
+    $ rbenv rehash
+
+Then run
+
+    $ mailcatcher
+
+That's it. You should be able to see mails sent from the app at http://127.0.0.1:1080
 
 #### Launching the app
 

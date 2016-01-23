@@ -1,5 +1,7 @@
 # Cast or withdraw a vote on a movie
 class VotingBooth
+  attr_reader :user, :movie
+
   def initialize(user, movie)
     @user  = user
     @movie = movie
@@ -14,9 +16,10 @@ class VotingBooth
     unvote # to guarantee consistency
     set.add(@user)
     _update_counts
+    _notify_movie_submitter
     self
   end
-  
+
   def unvote
     @movie.likers.delete(@user)
     @movie.haters.delete(@user)
@@ -25,6 +28,10 @@ class VotingBooth
   end
 
   private
+
+  def _notify_movie_submitter
+    VoteNotifier.new(user, movie).notify
+  end
 
   def _update_counts
     @movie.update(

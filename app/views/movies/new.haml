@@ -17,7 +17,8 @@
         .form-group{ class: @validator.class_for(:date) }
           %label{ for:  'date' } Date
           %input.form-control{ name: 'date', type: 'date', value: @movie.date }
+        .checkbox{ class: @validator.class_for(:notify) }
+          %label
+            %input{ type: 'checkbox', name: 'notifications', value: 'true' } Notify me on new likes / hates
         .form-group
           = submit_tag 'Add movie', class: 'btn btn-primary'
-       
-

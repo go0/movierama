@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body
+    %h1
+      You got new vote for #{@movie.title}!
+      %br/
+    %p
+      Hi #{@movie.user.name},
+      %br/
+      %br/
+
+      Your movie
+      %strong= @movie.title
+      has been voted by
+      %strong= @voter.name
+      \.
+
+    %p
+      New results
+      %br/
+      ======
+      %br/
+      Likes: #{@movie.liker_count}
+      %br/
+      Hates: #{@movie.hater_count}
+      %br/
+
+    %p Have a nice day!
+    %br/
+    Movierama

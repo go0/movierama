@@ -58,10 +58,12 @@ gem 'pry'
 gem 'pry-nav'
 gem 'pry-doc'
 
+gem 'awesome_print', '~> 1.6', '>= 1.6.1'
 
 group :test do
   gem 'guard-rspec'    # Continuous testing
   gem 'rspec-rails'    # Test framework with Rail extensions
   gem 'poltergeist'    # Driver for PhantomJS headless browser
   gem 'capybara'       # DSL for browser control
+  gem 'timecop', '~> 0.8.0'
 end

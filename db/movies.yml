@@ -9,6 +9,8 @@
     between the land and the ship.
   date:
     1980-05-21
+  notifications:
+    true
 - title:
     Bill & Ted's excellent adventure
   date:
@@ -19,6 +21,8 @@
     Ted. These two great gentlemen are dedicated to a proposition which was true
     in my time, just as it's true today. Be excellent to each other. And...
     PARTY ON, DUDES!
+  notifications:
+    true
 - title:
     The Hitchhiker's Guide to the Galaxy
   date:
@@ -38,6 +42,8 @@
     married and they won't have kids. That's why your older brother's
     disappearing from that photograph. Your sister will follow, and unless you
     repair the damage, you'll be next.
+  notifications:
+    true
 - title:
     Blade runner
   date:
@@ -48,6 +54,5 @@
     All he'd wanted were the same answers the rest of us want. Where did I come
     from? Where am I going? How long have I got? All I could do was sit there
     and watch him die.
-
-
-
+  notifications:
+    true
