@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe VoteNotifier do
-  let(:voter) { FakeHelper.user }
-  let(:movie) { FakeHelper.movie }
+  let(:voter) { create_user }
+  let(:movie) { create_movie }
 
   describe '#notify' do
     context 'when notifications are enabled' do

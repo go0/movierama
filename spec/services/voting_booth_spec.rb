@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe VotingBooth do
-  let(:user) { FakeHelper.user }
-  let(:movie) { FakeHelper.movie }
+  let(:user) { create_user }
+  let(:movie) { create_movie }
 
   let(:vote_notifier) { double('VoteNotifier') }
 
