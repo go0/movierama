@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Movie do
-  describe '#notification_enabled?' do
+  describe '#notifications_on?' do
     context "when it's on" do
       subject { Movie.new(notifications: 'true') }
 
